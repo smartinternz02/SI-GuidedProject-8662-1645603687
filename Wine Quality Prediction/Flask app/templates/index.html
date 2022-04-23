@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GDP Analysis</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<style type="text/css">
+		  	
+body {
+  background-image: url('https://res.allmacwallpaper.com/get/macbook-air-wallpapers/Name-Your-Poison/7799-720.jpg');
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				 <div class="page-header">
+    				<h1 style="color:red;">Wine Quality Prediction</h1>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<form action="/data_predict" method="POST">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="type" style="color:red;">Type:</label>
+							    <select name="type" class="form-control" id="type">
+							        <option value="0">Red</option>
+							        <option value="1">White</option>
+                                </select> 
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="fixed_acidity" style="color:red;">Fixed Acidity:</label>
+							    <input type="text" class="form-control" id="fixed_acidity" name="fixed_acidity" placeholder="Range 3.8 to 15.9">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="residual_sugar" style="color:red;">Residual Sugar:</label>
+							    <input type="text" class="form-control" id="residual_sugar" name="residual_sugar" placeholder="Range 0.06 to 65.8">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="citric_acid" style="color:red;">Citric Acid:</label>
+							    <input type="text" class="form-control" id="citric_acid" name="citric_acid" placeholder="Range 0.0 to 1.66">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="free_sulfur_dioxide" style="color:red;">Free Sulfur Dioxide:</label>
+							    <input type="text" class="form-control" id="free_sulfur_dioxide" name="free_sulfur_dioxide" placeholder="Range (1.0, 289.0)">
+							</div>
+						</div>
+						
+				
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="alcohol" style="color:red;">Alcohol:</label>
+							    <input type="text" class="form-control" id="alcohol" name="alcohol" placeholder="Range (8.0, 14.9)">
+							</div>
+						</div>
+						</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="pH" style="color:red;">pH:</label>
+							    <input type="text" class="form-control" id="pH" name="pH" placeholder="Range (2.72, 4.01)">
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+							    <label for="sulphates" style="color:red;">Sulphates:</label>
+							    <input type="text" class="form-control" id="sulphates" name="sulphates" placeholder="Range (0.22, 2.0)">
+							</div>
+						</div>
+						</div>
+
+					<button type="submit" class="btn btn-default" style="color:red;">Predict</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script
+</body>
+</html>
